@@ -16,7 +16,7 @@ function scheduleCronstyle() {
   parser.on('error', function (err) { console.log('Parser error', err); });
 
   var data = '';
-  http.get('http://opendata.cwb.gov.tw/opendataapi?dataid=O-A0002-001&authorizationkey=CWB-6DAA609E-4C4C-44E9-9418-6C366409A503', function (res) {
+  http.get('http://opendata.cwb.gov.tw/opendataapi?dataid=O-A0002-001&authorizationkey="_your key from government_"', function (res) {
     if (res.statusCode >= 200 && res.statusCode < 400) {
       res.on('data', function (data_) { data += data_.toString(); });
       res.on('end', function () {
