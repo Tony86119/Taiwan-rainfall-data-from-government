@@ -10,6 +10,7 @@ var fs = require("fs");
 
 //排程
 function scheduleCronstyle() {
+   //set your schedulejob 
    schedule.scheduleJob('30 1 * * * *', function(){
   console.log('scheduleCronstyle:' + new Date());
 
